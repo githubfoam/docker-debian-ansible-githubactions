@@ -12,6 +12,7 @@ RUN apt-get update -qy && \
 # MATCHING_UBUNTU_CODENAME
 RUN echo deb http://ppa.launchpad.net/ansible/ansible/ubuntu Ubuntu focal \
     main | tee /etc/apt/sources.list.d/ansible.list   && \
+    apt-get update -qy && apt-get install gnupg -yq && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367   && \
     apt-get update -qy && \
     apt-get install ansible -yq 
