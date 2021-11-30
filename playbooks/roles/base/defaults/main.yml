@@ -3,7 +3,6 @@ system_packages:
   - git
   - unzip
   - tar
-  - build-essential
 
 # defaults file for common
 common_default_debian_reqs:
