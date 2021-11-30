@@ -10,7 +10,8 @@ RUN apt-get update -qy && \
 
 # https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-debian
 # MATCHING_UBUNTU_CODENAME
-RUN apt-get update -qy && apt-get install gnupg curl -yq && \
+# python3-apt must be installed to use check mode
+RUN apt-get update -qy && apt-get install gnupg curl python3-apt -yq && \
     echo deb http://ppa.launchpad.net/ansible/ansible/ubuntu focal main \
     | tee /etc/apt/sources.list.d/ansible.list   && \
     # The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 93C4A3FD7BB9C367

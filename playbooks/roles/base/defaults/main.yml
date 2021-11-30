@@ -10,8 +10,7 @@ common_default_debian_reqs:
   - unzip
   - tar
   - build-essential
-  # python3-apt must be installed to use check mode
-  - python3-apt
+
 
 common_default_redhat_reqs:
   - git
