@@ -1,1 +1,3 @@
 # docker-debian-ansible-githubactions
+[![bullseye ansible local CI workflow](https://github.com/githubfoam/docker-debian-ansible-githubactions/actions/workflows/bullseye-ansible-local-wf.yml/badge.svg?branch=main)](https://github.com/githubfoam/docker-debian-ansible-githubactions/actions/workflows/bullseye-ansible-local-wf.yml)  
+[![buster ansible local CI workflow](https://github.com/githubfoam/docker-debian-ansible-githubactions/actions/workflows/buster-ansible-local-wf.yml/badge.svg?branch=main)](https://github.com/githubfoam/docker-debian-ansible-githubactions/actions/workflows/buster-ansible-local-wf.yml)
